@@ -1,0 +1,121 @@
+.mainbox {
+    /* width: 513px; */
+    width: 512px;
+    height: 170px;
+    border: 4px solid black;
+    margin-left: 390px;
+    margin-top: -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.heading{
+    margin-left: 560px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    text-shadow: 2px 2px 6px rgba(255, 165, 0, 0.7);
+    margin-top: -15px;
+    text-decoration: underline;
+}
+
+.line2 {
+    border: none;
+    height: 4px;
+    background-color: white;
+}
+
+
+.row1 {
+    display: flex;
+}
+.container {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+#historybox {
+    width: 300px;
+    height: 410px;
+    border: 4px solid black;
+    margin-left: 490px;
+    margin-top: -228px;
+    display: none;
+    background-color: #000000;
+    color: white;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.delete {
+    border-top: 4px solid white;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    margin-left: 490px;
+    width: 300px;
+    display: none;
+    background-color: #000000;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.clear {
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 85px;
+    margin-left: 100px;
+    margin-top: 15px;
+    background-color: red;
+    color: white; 
+}
+.clear:hover{
+    background-color: #b30000;
+    color: white;
+}
+.history{
+    text-align: right;
+    border: 1px solid transparent;
+    margin-top: -1px;
+}
+.history p {
+    margin: 0px;
+    padding: 5px;
+    padding-top: 10px;
+}
+.scroll {
+    overflow-y: auto;
+    height: 360px;
+    scrollbar-color: grey white;
+}
+
+.calculation input{
+    width: 100%;
+    height: 79px;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0 1px 3px 0;
+    letter-spacing: 4px;
+    background-color: #000000;
+    color: white;
+}       
+.bottom-section {
+    width: 520px;
+    height: 310px;
+    border: 4px solid black;
+    margin-left: 390px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    box-sizing: border-box;
+    background-color: #000000;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}

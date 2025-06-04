@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity4</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a079584e20.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="heading">
+        <h1>Calculator</h1>
+    </div>
+    <div class="mainbox">
+            <div class="calculation">
+                <input type="text" value="" disabled id="subVal">
+				<input type="text" value="0" id="inputVal">
+            </div>
+    </div>
+        <div class="bottom-section">
+            <div class="row1">
+                <div class="container" style="color: black;background-color: grey;">
+                    <i class="fa-solid fa-clock-rotate-left" onclick="showHide()"></i>
+                    <div id="historybox">History 
+                        <hr class="line2">    
+                        <div class="scroll">                
+                            <div class="history"></div>
+                        </div>
+                    </div>
+                    <div class="delete">
+                        <p class="clear" onclick="clearHistory()">Clear All</p>
+                    </div>
+                </div>
+                <div class="container" style="color: black;background-color: grey;" onclick="clearAll()">AC</div>
+                <div class="container" style="color: black;background-color: grey;" onclick="removelastdigit()"><i class="fa-solid fa-delete-left"></i></div>
+                <div class="container" style="color: white;background-color: orange;" onclick="getValue('/')">/</div>
+            </div>
+            <div class="row1">
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('7')">7</div>
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('8')">8</div>
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('9')">9</div>
+                <div class="container" style="color: white;background-color: orange;" onclick="getValue('*')"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="row1">
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('4')">4</div>
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('5')">5</div>
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('6')">6</div>
+                <div class="container" style="color: white;background-color: orange;" onclick="getValue('-')"><i class="fa-solid fa-minus"></i></div>
+            </div>
+            <div class="row1">
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('1')">1</div>
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('2')">2</div>
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('3')">3</div>
+                <div class="container" style="color: white;background-color: orange;" onclick="getValue('+')"><i class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="row1">
+                <div class="container" style="color: white;background-color: black;" onclick="percentage('%')">%</div>
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('0')">0</div>
+                <div class="container" style="color: white;background-color: black;" onclick="getValue('.')">.</div>
+                <div class="container" style="color: white;background-color: orange;" onclick="solve()"><i class="fa-solid fa-equals"></i></div>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </div>
+</body>
+</html>
